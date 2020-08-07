@@ -62,6 +62,8 @@ Step 3
 Navigate to the Docker Menu Point in VS Code, then choose the right container 
 -> Attach Visual Studio Code
 
+![li](https://github.com/GaboCapo/WordpressToolset/blob/master/rsc/vscode1.png)
+
 ***
 Step 4
 Wordpress files are kept inside the `container`, for example you can find `wp-content` at:
@@ -72,6 +74,6 @@ Wordpress files are kept inside the `container`, for example you can find `wp-co
 
 But, to get "inside" your running container you will have to do something like `docker container exec -it <your_container_name> bash`. More here: [How to get into a docker container?](https://stackoverflow.com/questions/30172605/how-to-get-into-a-docker-container)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE1ODQ5MDQ4OCwtMzYyMjUzMzAxLC0xMD
-A5NjMyMDEsLTc0OTg1NTA5NF19
+eyJoaXN0b3J5IjpbMTA0ODkwMjM3OCwxMTU4NDkwNDg4LC0zNj
+IyNTMzMDEsLTEwMDk2MzIwMSwtNzQ5ODU1MDk0XX0=
 -->
