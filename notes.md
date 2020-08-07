@@ -76,7 +76,13 @@ Wordpress files are kept inside the `container`, for example you can find `wp-co
 ```
 
 But, to get "inside" your running container you will have to do something like `docker container exec -it <your_container_name> bash`. More here: [How to get into a docker container?](https://stackoverflow.com/questions/30172605/how-to-get-into-a-docker-container)
+
+
+***
+Step 5
+
+Have Fun with Development! 😀
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEyNDUwMTk3MCwxMTU4NDkwNDg4LC0zNj
-IyNTMzMDEsLTEwMDk2MzIwMSwtNzQ5ODU1MDk0XX0=
+eyJoaXN0b3J5IjpbODE5NzM2NTc3LDExNTg0OTA0ODgsLTM2Mj
+I1MzMwMSwtMTAwOTYzMjAxLC03NDk4NTUwOTRdfQ==
 -->
