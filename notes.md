@@ -54,12 +54,12 @@ Start the Docker Container with:
 
 ***
 Step 2
-Instal VS Code Extension "Docker ":
+Install VS Code Extension "Docker ":
  `ms-azuretools.vscode-docker`
 ***
 Step 3
 
-
+Navigate to the Docker 
 
 ***
 Step 4
@@ -71,6 +71,6 @@ Wordpress files are kept inside the `container`, for example you can find `wp-co
 
 But, to get "inside" your running container you will have to do something like `docker container exec -it <your_container_name> bash`. More here: [How to get into a docker container?](https://stackoverflow.com/questions/30172605/how-to-get-into-a-docker-container)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMjY4NDY2MTIsLTEwMDk2MzIwMSwtNz
-Q5ODU1MDk0XX0=
+eyJoaXN0b3J5IjpbLTM2MjI1MzMwMSwtMTAwOTYzMjAxLC03ND
+k4NTUwOTRdfQ==
 -->
