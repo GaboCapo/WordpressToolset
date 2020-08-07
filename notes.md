@@ -11,34 +11,38 @@ Env:
 Step 1
 Setup a `docker-compose.yml` File like here:
 
-  version: '3.3'
+ 
 
-services:
-   db:
-     image: mysql:5.7
-     volumes:
-       - db_data:/var/lib/mysql
-     restart: always
-     environment:
-       MYSQL_ROOT_PASSWORD: somewordpress
-       MYSQL_DATABASE: wordpress
-       MYSQL_USER: wordpress
-       MYSQL_PASSWORD: wordpress
+     version: '3.3'
+    
+    services:
+       db:
+         image: mysql:5.7
+         volumes:
+           - db_data:/var/lib/mysql
+         restart: always
+         environment:
+           MYSQL_ROOT_PASSWORD: somewordpress
+           MYSQL_DATABASE: wordpress
+           MYSQL_USER: wordpress
+           MYSQL_PASSWORD: wordpress
+    
+       wordpress:
+         depends_on:
+           - db
+         image: wordpress:latest
+         ports:
+           - "8000:80"
+         restart: always
+         environment:
+           WORDPRESS_DB_HOST: db:3306
+           WORDPRESS_DB_USER: wordpress
+           WORDPRESS_DB_PASSWORD: wordpress
+           WORDPRESS_DB_NAME: wordpress
+    volumes:
+        db_data: {}
+[Code Source - Hostinger - Run Docker Wordpress ](https://www.hostinger.com/tutorials/run-docker-wordpress)
 
-   wordpress:
-     depends_on:
-       - db
-     image: wordpress:latest
-     ports:
-       - "8000:80"
-     restart: always
-     environment:
-       WORDPRESS_DB_HOST: db:3306
-       WORDPRESS_DB_USER: wordpress
-       WORDPRESS_DB_PASSWORD: wordpress
-       WORDPRESS_DB_NAME: wordpress
-volumes:
-    db_data: {}
 
 
 ***
@@ -59,6 +63,6 @@ Wordpress files are kept inside the `container`, for example you can find `wp-co
 
 But, to get "inside" your running container you will have to do something like `docker container exec -it <your_container_name> bash`. More here: [How to get into a docker container?](https://stackoverflow.com/questions/30172605/how-to-get-into-a-docker-container)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NjIwMDg2ODgsLTEwMDk2MzIwMSwtNz
-Q5ODU1MDk0XX0=
+eyJoaXN0b3J5IjpbMjA2ODMyMTQ5LC0xMDA5NjMyMDEsLTc0OT
+g1NTA5NF19
 -->
