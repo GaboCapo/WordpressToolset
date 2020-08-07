@@ -43,6 +43,13 @@ Setup a `docker-compose.yml` File like here:
         db_data: {}
 [Code Source - Hostinger - Run Docker Wordpress ](https://www.hostinger.com/tutorials/run-docker-wordpress)
 
+***
+
+Step 1.1
+
+Start the Docker Container with:
+
+    docker-compose up -d
 
 
 ***
@@ -51,6 +58,7 @@ Instal VS Code Extension "Docker ":
  `ms-azuretools.vscode-docker`
 ***
 Step 3
+
 
 
 ***
@@ -63,6 +71,6 @@ Wordpress files are kept inside the `container`, for example you can find `wp-co
 
 But, to get "inside" your running container you will have to do something like `docker container exec -it <your_container_name> bash`. More here: [How to get into a docker container?](https://stackoverflow.com/questions/30172605/how-to-get-into-a-docker-container)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA2ODMyMTQ5LC0xMDA5NjMyMDEsLTc0OT
-g1NTA5NF19
+eyJoaXN0b3J5IjpbLTExMjY4NDY2MTIsLTEwMDk2MzIwMSwtNz
+Q5ODU1MDk0XX0=
 -->
