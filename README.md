@@ -1,6 +1,6 @@
 # WordpressToolset
 
-# Wordpress Notes
+## Wordpress Notes
 
 Env:
 
@@ -91,3 +91,13 @@ eyJoaXN0b3J5IjpbLTE3OTk1OTAyODQsODE5NzM2NTc3LDExNT
 g0OTA0ODgsLTM2MjI1MzMwMSwtMTAwOTYzMjAxLC03NDk4NTUw
 OTRdfQ==
 -->
+
+
+***
+
+## Troubleshooting
+
+
+When there is an "docker.credentials.errors.InitializationError:" or something like that, you can try to remove the config.json with `rm ~/.docker/config.json`
+Thanks to gaddman:
+https://github.com/docker/compose/issues/7495#issuecomment-642915975
